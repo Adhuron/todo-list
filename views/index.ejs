@@ -1,0 +1,16 @@
+
+<% include partials/header %>
+	<h3>Add Todo</h3>
+<form method="POST" action="/todos/add">
+   <div>
+      <label>Todo title: </label>
+      <input type="text" name="title" placeholder="Add title">
+   </div>
+   <div>
+      <label>Todo description: </label>
+      <textarea name="description" placeholder="Add description">
+      </textarea>
+   </div>
+   <button type="submit">Submit</button>
+</form>
+<% include partials/footer %>
