@@ -13,4 +13,19 @@
    </div>
    <button type="submit">Submit</button>
 </form>
+
+
+
+<h3> All todos: </h3>
+<ul>
+<% docs.map(function(doc) {    %>
+
+<li>
+<%= doc.title + ' - ' + doc.description %> <a href="/todos/<%= doc._id %>"> Show  </a>  <a href ="/todos/edit/<%= doc._id %>"
+>Edit</a><a href="/todos/delete/<%= doc._id%>">Delete</a>
+</li>
+
+<% }); %>
+</ul>
+
 <% include partials/footer %>
